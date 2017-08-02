@@ -68,7 +68,7 @@ public class Main {
     /**
      * simplename的不同
      *
-     * @param args
+     * @param
      */
     public static void getSimpleName() {
         System.out.println("\n");
