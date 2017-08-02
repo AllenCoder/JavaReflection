@@ -100,7 +100,7 @@ public class Main {
     }
 
     /**
-     * 
+     *
      */
     public static void getCanonicalName() {
         Class clz = new Outter.Inner[][][]{}.getClass();
