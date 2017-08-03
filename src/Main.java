@@ -1,4 +1,5 @@
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 public class Main {
 
@@ -32,6 +33,8 @@ public class Main {
         getAnonymousClassName();
 
         getCanonicalName();
+
+        getModifier();
 
     }
 
@@ -85,7 +88,7 @@ public class Main {
      */
     public static void getAnonymousClassName() {
 
-        System.out.println("匿名的内部类的getSimpleName" +"\n");
+        System.out.println("匿名的内部类的getSimpleName" + "\n");
         Runnable run = new Runnable() {
             @Override
             public void run() {
@@ -107,5 +110,15 @@ public class Main {
         System.out.println("clz.getName() = " + clz.getName());
         System.out.println("clz.getSimpleName() = " + clz.getSimpleName());
         System.out.println("clz.getCanonicalName() = " + clz.getCanonicalName());
+    }
+
+    /**
+     * 获取修饰符
+     */
+    public static void getModifier() {
+
+        System.out.println("获取修饰符 \n");
+        System.out.println("TestModifier.class.getModifiers() = " + TestModifier.class.getModifiers());
+        System.out.println("Modifier.toString(TestModifier.class.getModifiers()) = " + Modifier.toString(TestModifier.class.getModifiers()));
     }
 }
