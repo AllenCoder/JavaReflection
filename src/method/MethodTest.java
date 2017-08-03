@@ -85,7 +85,7 @@ public class MethodTest {
 //            e.printStackTrace();
 //        } catch (IllegalArgumentException e) {
 //            // TODO Auto-generated catch block
-//            e.printStackTrace();
+//            e.prwintStackTrace();
 //        } catch (InvocationTargetException e) {
 //            // TODO Auto-generated catch block
 //            e.printStackTrace();

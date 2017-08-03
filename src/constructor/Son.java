@@ -15,7 +15,13 @@ public class Son extends Father {
 //        super();
 //    }
 
+    private String self;
+    public Son(){
+        System.out.println("Son.Son 无形参");
+    }
+
     public Son(int a, int b) {
         super();
+        System.out.println("Son.Son 两个形参");
     }
 }
